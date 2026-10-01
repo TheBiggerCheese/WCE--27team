@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>AFL Lineup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>AFL Lineup</h1>
+
+    <section class="field-wrap">
+      <img src="field.png" class="field-image" alt="AFL field">
+
+      <div id="fieldSlots" class="field-slots"></div>
+    </section>
+
+    <section class="followers-section">
+      <h2>Followers</h2>
+      <div id="followerSlots" class="slot-row"></div>
+    </section>
+
+    <section class="bench-section">
+      <h2>Bench</h2>
+      <div id="benchSlots" class="bench-row"></div>
+    </section>
+  </main>
+
+  <div id="picker" class="picker hidden">
+    <div class="picker-card">
+      <div class="picker-header">
+        <h2>Select Player</h2>
+        <button id="closePicker" class="close-button" type="button">×</button>
+      </div>
+
+      <input id="playerSearch" type="search" placeholder="Search players..." autocomplete="off">
+      <div id="playerList" class="player-list"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
